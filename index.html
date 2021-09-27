@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Frostagram Kaydol</title>
+    
+</head>
+<body>
+<div id="main-div">
+<h1>Frostagram Kaydol</h1><br>
+<form action="#">
+
+    <input type="text" class="input" id="ad" placeholder="Adın" autocomplete="off" required>
+    <input type="text" class="input" id="soyad" placeholder="Soyadın" autocomplete="off"><br>
+
+    <input type="email" class="input" id="email" placeholder="E-Posta" autocomplete="off" required><br>
+    <input type="email" class="input" id="email-tekrar" placeholder="E-Posta Tekrar" autocomplete="off" required><br>
+    <p style="margin-top: 14px;">Doğum Tarihi:</p>
+
+    <select class="input" name="birthday-day" id="birthday-day">
+        <option value="day" selected>Gün</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+    </select>
+
+    <select class="input" name="birthday-month" id="birthday-month">
+        <option value="month" selected>Ay</option>
+        <option value="1">Ocak</option>
+        <option value="2">Şubat</option>
+        <option value="3">Mart</option>
+        <option value="4">Nisan</option>
+        <option value="5">Mayıs</option>
+        <option value="6">Haziran</option>
+        <option value="7">Temmuz</option>
+        <option value="8">Ağustos</option>
+        <option value="9">Eylül</option>
+        <option value="10">Ekim</option>
+        <option value="11">Kasım</option>
+        <option value="12">Aralık</option>
+    </select>
+
+    <select class="input" name="birthday-year" id="birthday-year">
+        <option value="year" selected>Yıl</option>
+        <option value="2011">2011</option>
+        <option value="2010">2010</option>
+        <option value="2009">2009</option>
+        <option value="2008">2008</option>
+        <option value="2007">2007</option>
+        <option value="2006">2006</option>
+        <option value="2005">2005</option>
+        <option value="2004">2004</option>
+        <option value="2003">2003</option>
+        <option value="2002">2002</option>
+        <option value="2001">2001</option>
+        <option value="2000">2000</option>
+    </select><br>
+    
+    <p style="margin-top: 14px;">Cinsiyet:</p>
+
+    <div class="gender-div" id="gender-man-div">
+    <label class="gender-label" for="gender-man">Erkek</label>
+    <input type="radio" name="cinsiyet" id="gender-man">
+    
+    </div>
+    <div class="gender-div" id="gender-woman-div">
+    <label class="gender-label" for="gender-woman">Kadın</label>
+    <input type="radio" name="cinsiyet" id="gender-woman">
+    </div>
+    <div class="gender-div" id="gender-special-div">
+    <label class="gender-label" for="gender-special">Özel</label>
+    <input type="radio" name="cinsiyet" id="gender-special">
+    </div><br>
+
+    <input type="password" class="input" id="password" placeholder="Şifre" autocomplete="off">
+    <input type="password" class="input" id="password-tekrar" placeholder="Şifre Tekrar" autocomplete="off"><br>
+
+    <p>Kullanıcı Adı:</p>
+    <input type="text" class="input" id="username" maxlength="12" autocomplete="off"><br>
+
+    <p class="agreement">Kayıt olarak <a href="">anlaşmamızı</a> kabul edersiniz!</p>
+
+    <input type="submit" value="Kaydol" id="register"><br>
+<!--
+    <p id="warning1">Kayıt olduktan sonra size doğru- <br> lama postası göndereceğiz.</p>
+    <p id="warning2">Kayıt olarak kullanıcı sözleşme- <br> mizi kabul edersiniz. <a href="">Okuyun!</a></p>
+-->
+</form>
+
+<script>
+
+    const input = document.querySelector("form input"),
+    counter = document.querySelector("form .counter"),
+    maxLength = input.getAttribute("maxlength");
+
+    input.onkeyup = ()=>{
+      counter.innerText = maxLength - input.value.length;
+    }
+
+</script>
+
+</div>
+</body>
+</html>

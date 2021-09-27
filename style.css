@@ -1,0 +1,223 @@
+*{
+    font-family: calibri;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {height:100%;}
+body {
+
+height:100%;
+display: -webkit-box;
+display: -moz-box;
+display: -ms-flexbox;
+display: -webkit-flex;
+display:flex;
+-webkit-box-align: center; -moz-box-align: center;
+-ms-flex-align: center;
+-webkit-align-items: center;
+align-items: center;
+-webkit-box-pack: center; -moz-box-pack: center;
+-ms-flex-pack: center;
+-webkit-justify-content: center;
+justify-content: center;
+
+}
+
+body{
+    min-height: 100vh;
+    background: -webkit-linear-gradient(left, #a445b2, #fa4299) no-repeat;
+}
+
+::selection{
+    background: #fa4299;
+    color: #fff;
+}
+
+.input{
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #58cff1;
+    caret-color: #58cff1;
+    font-family: Calibri;
+    font-size: 22px;
+    height: 38px;
+    width: 180px;
+    padding-left: 10px;
+}
+
+h1{
+    font-weight: bold;
+    font-style: normal;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+#ad{
+    margin-left: 20px;
+}
+
+#soyad{
+    margin-left: 20px;
+}
+
+#email{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 385px;
+}
+
+#email-tekrar{
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 385px;
+}
+
+p{
+    margin-top: 8px;
+    margin-left: 20px;
+    font-size: 22px;
+}
+
+#birthday-day{
+    width: 110px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+#birthday-month{
+    width: 120px;
+    margin-left: 8px;
+    border-radius: 2px;
+}
+
+#birthday-year{
+    width: 130px;
+    margin-left: 8px;
+    border-radius: 2px;
+}
+
+#password{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#password-tekrar{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#username{
+    margin-left: 20px;
+    margin-top: 4px;
+    width: 385px;
+}
+
+#register{
+    width: 80px;
+    height: 40px;
+    border-radius: 4px;
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    background-color: rgb(255, 68, 0);
+    margin-left: 160px;
+    margin-top: 20px;
+    color: black;
+    transition: 0.3s;
+    font-family: calibri;
+    font-size: 18px;
+}
+
+#register:hover{
+    color: white;
+}
+
+#register:active{
+    transform: translateY(4px);
+}
+
+::placeholder{
+    color: gray;
+    user-select: none;
+}
+
+input:past{
+    opacity: 1;
+}
+
+a{
+    list-style-type: none;
+}
+
+.agreement{
+    font-size: 18px;
+}
+
+a{
+    list-style-type: none;
+    user-select: none;
+}
+
+
+#warning1{
+    font-size: 19px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    float: right;
+}
+
+#warning2{
+    font-size: 19px;
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    float: right;
+}
+
+.gender-div{
+    display: inline-block;
+    border: 1px solid #58cff1;
+    margin-top: 8px;
+    padding: 6px;
+    padding-left: 12px;
+    border-radius: 2px;
+    background-color: white;
+    width: 120px;
+    
+}
+
+.gender-label{
+    padding-left: 10px;
+    font-family: calibri;
+    font-size: 22px;
+}
+
+#gender-man-div{
+    margin-left: 20px;
+}
+
+#gender-woman-div{
+    margin-left: 8px;
+}
+
+#gender-special-div{
+    margin-left: 8px;
+}
+
+#gender-woman{
+    margin-left: 10px;
+}
+
+
+#gender-man{
+    margin-left: 10px;
+}
+
+#gender-special{
+    margin-left: 10px;
+}
